@@ -34,7 +34,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime1"/>
                                                         <connections>
-                                                            <action selector="button1Tapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="PsS-CO-L79"/>
+                                                            <action selector="imageButtonTapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="xQH-uv-jRR"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Haq-7s-stl">
@@ -59,7 +59,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime2"/>
                                                         <connections>
-                                                            <action selector="button2Tapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="4HR-JA-JdF"/>
+                                                            <action selector="imageButtonTapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="S5b-oP-1gE"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zy-aE-Ovd">
@@ -84,7 +84,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime3"/>
                                                         <connections>
-                                                            <action selector="button3Tapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="Km8-So-NTm"/>
+                                                            <action selector="imageButtonTapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="H9N-pi-TPy"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKg-F6-O0f">
@@ -114,7 +114,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime4"/>
                                                         <connections>
-                                                            <action selector="button4Tapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="6oC-CV-8U1"/>
+                                                            <action selector="imageButtonTapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="ioE-Yk-HgF"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nn3-hN-aHb">
@@ -139,7 +139,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime5"/>
                                                         <connections>
-                                                            <action selector="button5Tapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="A2h-xh-f1m"/>
+                                                            <action selector="imageButtonTapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="3kD-Tx-adc"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3s-su-fDP">
@@ -164,7 +164,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime6"/>
                                                         <connections>
-                                                            <action selector="button6Tapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="E9J-9f-Arm"/>
+                                                            <action selector="imageButtonTapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="rMs-my-yxd"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwE-n3-YHY">
@@ -194,7 +194,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime7"/>
                                                         <connections>
-                                                            <action selector="button7Tapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="Yap-g0-oVI"/>
+                                                            <action selector="imageButtonTapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="ktK-wN-4Xd"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92h-Ny-VLa">
@@ -219,7 +219,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime8"/>
                                                         <connections>
-                                                            <action selector="button8Tapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="MPO-t5-vAH"/>
+                                                            <action selector="imageButtonTapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="iQb-31-ziY"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyi-xG-djh">
@@ -244,7 +244,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime9"/>
                                                         <connections>
-                                                            <action selector="button9Tapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="nZV-7F-Tz0"/>
+                                                            <action selector="imageButtonTapped:" destination="UBb-fO-mpv" eventType="touchUpInside" id="Njv-h6-PBI"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lez-bZ-nnm">
@@ -313,22 +313,31 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Yc7-db-PeV"/>
                     <connections>
-                        <outlet property="label1" destination="Haq-7s-stl" id="pEg-Cu-ieY"/>
-                        <outlet property="label2" destination="9Zy-aE-Ovd" id="Uwh-yh-ekr"/>
-                        <outlet property="label3" destination="RKg-F6-O0f" id="nkA-kX-EFm"/>
-                        <outlet property="label4" destination="Nn3-hN-aHb" id="oYI-Me-2z0"/>
-                        <outlet property="label5" destination="y3s-su-fDP" id="d7g-ie-rdm"/>
-                        <outlet property="label6" destination="RwE-n3-YHY" id="P4W-7Q-Evq"/>
-                        <outlet property="label7" destination="92h-Ny-VLa" id="Wvs-zN-cP2"/>
-                        <outlet property="label8" destination="eyi-xG-djh" id="DMG-Lu-ZBm"/>
-                        <outlet property="label9" destination="lez-bZ-nnm" id="5gM-gg-eRM"/>
                         <outlet property="mainLabel" destination="gJ3-vg-y8F" id="d5L-a2-0SO"/>
                         <outlet property="resetButton" destination="45u-5Q-bu1" id="GXH-6Q-rKQ"/>
+                        <outletCollection property="buttonArr" destination="sDW-6r-QJ6" collectionClass="NSMutableArray" id="uvQ-Tj-Htp"/>
+                        <outletCollection property="buttonArr" destination="gxb-39-XGL" collectionClass="NSMutableArray" id="uqA-Rl-T7a"/>
+                        <outletCollection property="buttonArr" destination="gqh-p8-YU0" collectionClass="NSMutableArray" id="bcR-mX-g4X"/>
+                        <outletCollection property="buttonArr" destination="dEW-nz-6BQ" collectionClass="NSMutableArray" id="ZjO-mu-TJG"/>
+                        <outletCollection property="buttonArr" destination="u0O-JR-xjv" collectionClass="NSMutableArray" id="hA9-E0-GCt"/>
+                        <outletCollection property="buttonArr" destination="WZB-c9-t0q" collectionClass="NSMutableArray" id="iZH-sK-lpZ"/>
+                        <outletCollection property="buttonArr" destination="rWa-Ph-tdu" collectionClass="NSMutableArray" id="6Od-Pp-Quq"/>
+                        <outletCollection property="buttonArr" destination="BhR-17-8pd" collectionClass="NSMutableArray" id="1hO-Jd-iaK"/>
+                        <outletCollection property="buttonArr" destination="uel-5I-Q6P" collectionClass="NSMutableArray" id="Rrk-fs-5f0"/>
+                        <outletCollection property="labelArr" destination="Haq-7s-stl" collectionClass="NSMutableArray" id="jbT-mb-IWU"/>
+                        <outletCollection property="labelArr" destination="9Zy-aE-Ovd" collectionClass="NSMutableArray" id="60U-XN-d92"/>
+                        <outletCollection property="labelArr" destination="RKg-F6-O0f" collectionClass="NSMutableArray" id="Uxs-0p-wuK"/>
+                        <outletCollection property="labelArr" destination="Nn3-hN-aHb" collectionClass="NSMutableArray" id="Lkr-j0-m5Y"/>
+                        <outletCollection property="labelArr" destination="y3s-su-fDP" collectionClass="NSMutableArray" id="JjT-Ab-g9c"/>
+                        <outletCollection property="labelArr" destination="RwE-n3-YHY" collectionClass="NSMutableArray" id="gHt-aK-F6F"/>
+                        <outletCollection property="labelArr" destination="92h-Ny-VLa" collectionClass="NSMutableArray" id="9E6-bm-WEO"/>
+                        <outletCollection property="labelArr" destination="eyi-xG-djh" collectionClass="NSMutableArray" id="iW5-bk-8V2"/>
+                        <outletCollection property="labelArr" destination="lez-bZ-nnm" collectionClass="NSMutableArray" id="ZE9-Qr-Hzn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnB-ql-8M7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1400" y="722.54464285714278"/>
+            <point key="canvasLocation" x="-1649" y="751"/>
         </scene>
     </scenes>
     <resources>

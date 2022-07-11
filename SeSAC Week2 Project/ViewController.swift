@@ -10,83 +10,68 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var mainLabel: UILabel!
     
-    @IBOutlet weak var label1: UILabel!
-        
-    @IBOutlet weak var label2: UILabel!
+    @IBOutlet var buttonArr: [UIButton]!
     
-    @IBOutlet weak var label3: UILabel!
-        
-    @IBOutlet weak var label4: UILabel!
-    
-    @IBOutlet weak var label5: UILabel!
-    
-    @IBOutlet weak var label6: UILabel!
-    
-    @IBOutlet weak var label7: UILabel!
-    
-    @IBOutlet weak var label8: UILabel!
-        
-    @IBOutlet weak var label9: UILabel!
+    @IBOutlet var labelArr: [UILabel]!
     
     @IBOutlet weak var resetButton: UIButton!
     
-    var countLabel1: Int = 0
-    var countLabel2: Int = 0
-    var countLabel3: Int = 0
-    var countLabel4: Int = 0
-    var countLabel5: Int = 0
-    var countLabel6: Int = 0
-    var countLabel7: Int = 0
-    var countLabel8: Int = 0
-    var countLabel9: Int = 0
+    var emotionLabelArr = ["부끄러워", "좋아해", "사랑해", "화났어", "시무룩", "속상해", "뻘쭘해", "삐졌어", "우울해"]
+    
+    var emotionDic: [String: Int] = [:]
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureUI()
+        initEmotionDic()
+        setButtonsTitle(buttonArr)
+        setLabels(labelArr)
+    }
+    
+    func initEmotionDic() {
+        for i in emotionLabelArr {
+            emotionDic[i] = 0
+        }
+    }
+    
+    func setButtonsTitle(_ buttons: [UIButton]) {
+        guard (buttons.count == emotionLabelArr.count) else { return }
         
+        var index = 0
         
+        for button in buttons {
+            button.setTitle(emotionLabelArr[index], for: .normal)
+            index += 1
+          
+        }
+    }
+    
+    func setLabels(_ labels: [UILabel]) {
+        guard (labels.count == emotionLabelArr.count) else { return }
         
+        var index = 0
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        for label in labels {
+            let labelText = emotionLabelArr[index]
+            
+            if let counts = emotionDic[labelText] {
+                label.text = "\(labelText) " + String(counts)
+            }
+            index += 1
+        }
+     
     }
     
     func configureUI() {
-        label1.textAlignment = .center
-        label1.text = "부끄러워 \(countLabel1)"
-        
-        label2.textAlignment = .center
-        label2.text = "좋아해 \(countLabel2)"
-        
-        label3.textAlignment = .center
-        label3.text = "사랑해 \(countLabel3)"
-        
-        label4.textAlignment = .center
-        label4.text = "화났어 \(countLabel4)"
-        
-        label5.textAlignment = .center
-        label5.text = "시무룩 \(countLabel5)"
-        
-        label6.textAlignment = .center
-        label6.text = "속상해 \(countLabel6)"
+        designLabels()
+        designMainLabel()
+        designResetButton()
+    }
     
-        label7.textAlignment = .center
-        label7.text = "뻘쭘해 \(countLabel7)"
-        
-        label8.textAlignment = .center
-        label8.text = "삐졌어 \(countLabel8)"
-        
-        label9.textAlignment = .center
-        label9.text = "우울해 \(countLabel9)"
-        
+    func designResetButton() {
         resetButton.setTitle("Reset", for: .normal)
         resetButton.setTitleColor(.white, for: .normal)
         resetButton.titleLabel!.font = .systemFont(ofSize: 20, weight: .bold)
@@ -94,81 +79,34 @@ class ViewController: UIViewController {
         resetButton.layer.cornerRadius = 10
         resetButton.clipsToBounds = true
         
+    }
+    
+    func designMainLabel() {
+        mainLabel.text = "감정 다이어리"
         mainLabel.textAlignment = .center
         
+    }
+    func designLabels() {
+        for i in labelArr {
+            i.textAlignment = .center
+            i.textColor = .black
+            
+        }
+    }
+ 
+    @IBAction func imageButtonTapped(_ sender: UIButton) {
+        guard let button = sender.currentTitle else { return }
+        
+        emotionDic[button]! += 1
+        setLabels(labelArr)
         
         
-        
-        
-        
-        
-    }
-    
-    @IBAction func button1Tapped(_ sender: UIButton) {
-        countLabel1 += 1
-        label1.text = "부끄러워 \(countLabel1)"
-        
-    }
-    
-    @IBAction func button2Tapped(_ sender: UIButton) {
-        countLabel2 += 1
-        label2.text = "좋아해 \(countLabel2)"
-    }
-    
-    @IBAction func button3Tapped(_ sender: UIButton) {
-        countLabel3 += 1
-        label3.text = "사랑해 \(countLabel3)"
-    }
-    
-    @IBAction func button4Tapped(_ sender: UIButton) {
-        countLabel4 += 1
-        label4.text = "화났어 \(countLabel4)"
-    }
-    
-    @IBAction func button5Tapped(_ sender: UIButton) {
-        countLabel5 += 1
-        label5.text = "시무룩 \(countLabel5)"
-    }
-    
-    @IBAction func button6Tapped(_ sender: UIButton) {
-        countLabel6 += 1
-        label6.text = "속상해 \(countLabel6)"
-    }
-    
-    @IBAction func button7Tapped(_ sender: UIButton) {
-        countLabel7 += 1
-        label7.text = "뻘쭘해 \(countLabel7)"
-    }
-    
-    @IBAction func button8Tapped(_ sender: UIButton) {
-        countLabel8 += 1
-        label8.text = "삐졌어 \(countLabel8)"
-    }
-    
-    @IBAction func button9Tapped(_ sender: UIButton) {
-        countLabel9 += 1
-        label9.text = "우울해 \(countLabel9)"
     }
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {
-        countLabel1 = 0
-        countLabel2 = 0
-        countLabel3 = 0
-        countLabel4 = 0
-        countLabel5 = 0
-        countLabel6 = 0
-        countLabel7 = 0
-        countLabel8 = 0
-        countLabel9 = 0
-        label1.text = "부끄러워 \(countLabel1)"
-        label2.text = "좋아해 \(countLabel2)"
-        label3.text = "사랑해 \(countLabel3)"
-        label4.text = "화났어 \(countLabel4)"
-        label5.text = "시무룩 \(countLabel5)"
-        label6.text = "속상해 \(countLabel6)"
-        label7.text = "뻘쭘해 \(countLabel7)"
-        label8.text = "삐졌어 \(countLabel8)"
-        label9.text = "우울해 \(countLabel9)"
+        initEmotionDic()
+        setLabels(labelArr)
+        
     }
     
     
