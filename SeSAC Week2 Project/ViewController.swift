@@ -25,11 +25,35 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //mainLabel.text = setUserNickName()
+        
         configureUI()
         initEmotionDic()
         setButtonsTitle(buttonArr)
         setLabels(labelArr)
     }
+    
+//    func setUserNickName() -> String {
+//
+//        let nickname = ["고래밥", "칙촉", "격투가"]
+//        let select = nickname.randomElement()!
+//
+//        return "저는 \(select) 입니다."
+//
+//
+//    }
+    
+//    func example() -> (UIColor, String, String) {
+//
+//        let color: [UIColor] = [.yellow, .red, .green]
+//        let image: [String] = ["sesac_slime6", "sesac_slime7", "sesac_slime8", "sesac_slime5"]
+//
+//        return (color.randomElement()!, "고래밥", image.randomElement()!)
+//
+//    }
+    
+    
+    
     
     func initEmotionDic() {
         for i in emotionLabelArr {
@@ -106,10 +130,36 @@ class ViewController: UIViewController {
     @IBAction func resetButtonTapped(_ sender: UIButton) {
         initEmotionDic()
         setLabels(labelArr)
-        
+        //showAlertController()
     }
     
-    
+    func showAlertController() {
+        
+        // 1. 흰 바탕: UIAlertController
+        let alert = UIAlertController(title: "타이틀", message: "여기는 메세지가 들어갑니다", preferredStyle: .alert)
+        
+        // 2. 버튼
+        let ok = UIAlertAction(title: "확인", style: .destructive, handler: nil)
+        
+        let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        
+        let web = UIAlertAction(title: "새 창으로 열기", style: .default, handler: nil)
+        
+        let copy = UIAlertAction(title: "복사하기", style: .default, handler: nil)
+        
+        // 3. 1+2
+        alert.addAction(ok)
+        alert.addAction(cancel)
+        alert.addAction(web)
+        alert.addAction(copy)
+        
+        // 4. present
+        present(alert, animated: true, completion: nil)
+        
+        
+        
+        
+    }
     
     
 
