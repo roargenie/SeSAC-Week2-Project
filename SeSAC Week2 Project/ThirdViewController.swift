@@ -22,7 +22,12 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        emotionLabel[0].text = "부끄러워 " + "\(emotionLabelArr[0])"
+        emotionLabel[1].text = "좋아해 " + "\(emotionLabelArr[1])"
+        emotionLabel[2].text = "사랑해 " + "\(emotionLabelArr[2])"
+        emotionLabel[3].text = "화났어 " + "\(emotionLabelArr[3])"
+        emotionLabel[4].text = "뻘쭘해 " + "\(emotionLabelArr[4])"
+        emotionLabel[5].text = "화났어 " + "\(emotionLabelArr[5])"
         
     }
     
@@ -46,12 +51,7 @@ class ThirdViewController: UIViewController {
 //
 //        }
         
-        //emotionLabelArr[sender.tag] += 1
-        
-        
-        
-        
-        
+        emotionLabelArr[sender.tag] += 1
         
         emotionLabel[0].text = "부끄러워 " + "\(emotionLabelArr[0])"
         emotionLabel[1].text = "좋아해 " + "\(emotionLabelArr[1])"
